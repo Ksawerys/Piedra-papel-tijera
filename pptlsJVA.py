@@ -16,7 +16,9 @@ def main():
             print("Movimiento no válido. Inténtalo de nuevo.")
             continue
         
-        movimiento2 = juego.get_predicted_move() # La máquina predice su movimiento
+         # La máquina predice su movimiento
+        movimiento2 = juego.get_predicted_move()
+        
         # Se registra el movimiento del jugador
         juego.record_player_move(movimiento1)
         print(f"La máquina elige: {movimiento2}")
